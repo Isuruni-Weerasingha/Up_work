@@ -18,16 +18,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         List<Job> jobList = new ArrayList<>();
-        jobList.add(new Job("Amazon", "Customer Service Agent", "New York, USA", "$60/Hour"));
-        jobList.add(new Job("Total Ltd", "Office Assistance", "New York, USA", "$20/Hour"));
-        jobList.add(new Job("Amazon", "Customer Service Agent", "New York, USA", "$60/Hour"));
-        jobList.add(new Job("Total Ltd", "Office Assistance", "New York, USA", "$20/Hour"));
-        jobList.add(new Job("Amazon", "Customer Service Agent", "New York, USA", "$60/Hour"));
-        jobList.add(new Job("Total Ltd", "Office Assistance", "New York, USA", "$20/Hour"));
-        jobList.add(new Job("Amazon", "Customer Service Agent", "New York, USA", "$60/Hour"));
-        jobList.add(new Job("Total Ltd", "Office Assistance", "New York, USA", "$20/Hour"));
-        jobList.add(new Job("Amazon", "Customer Service Agent", "New York, USA", "$60/Hour"));
-        jobList.add(new Job("Total Ltd", "Office Assistance", "New York, USA", "$20/Hour"));
+        jobList.add(new Job("MNS Associates", "Audit Trainee", "Pettha", "50LKR/Hour"));
+        jobList.add(new Job("Bank of Ceylon", "Data entry", "Malabe", "100LKR/Hour"));
+        jobList.add(new Job("Sri Lanka Telecom PLC", "Telecom Careers", "Rajagiriya", "80LKR/Hour"));
+        jobList.add(new Job("Urban eats", "catering service", "Pitakotte", "50LKR/Hour"));
+        jobList.add(new Job("IDL", "Delivery", "Kothalawala", "$80LKR/Hour"));
+        jobList.add(new Job("Unilever", "Digital Commerce Projects Assistant", "Kaduwela", "20LKR/Hour"));
+
         JobAdapter jobAdapter = new JobAdapter(jobList);
         recyclerView.setAdapter(jobAdapter);
     }
