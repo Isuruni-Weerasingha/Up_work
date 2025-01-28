@@ -12,12 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UpWork"
         tools:targetApi="31">
+
+        <!-- Ensure your activity is properly declared -->
         <activity
-            android:name=".MainActivity"
+            android:name=".signup"
             android:exported="true">
+            <!-- Specify the intent filter if this is a launcher activity -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
