@@ -31,6 +31,15 @@
             android:src="@android:drawable/ic_menu_search" />
     </LinearLayout>
 
+
+
+
+
+
+
+
+
+
     <!-- RecyclerView for Job Listings -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
