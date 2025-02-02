@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Up Work</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="loginBtn">LOGIN</string>
+    <string name="or">OR</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="password">Password</string>
+    <string name="passwor">Password</string>
+    <string name="emai">Email</string>
+    <string name="logi">Login</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? Register</string>
+    <string name="n">login</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="e_mail">e-mail</string>
+    <string name="pss">password</string>
+    <string name="repeat_password">repeat password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="sign_upp">Sign up</string>
+    <string name="sign_up_with_social_account">Sign up with social account</string>
+    <string name="already_have_an_account_loginn">Already have an account? Login</string>
 </resources>

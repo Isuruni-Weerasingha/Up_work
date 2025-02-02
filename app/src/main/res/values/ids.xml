@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rememberMe" type="id" />
+    <item name="loginButton" type="id" />
+    <item name="forgotPassword" type="id" />
+    <item name="avatar" type="id" />
+    <item name="orText" type="id" />
+    <item name="googleLogin" type="id" />
+    <item name="appleLogin" type="id" />
+    <item name="facebookLogin" type="id" />
+    <item name="registerText" type="id" />
+    <item name="logo" type="id" />
+    <item name="loginTitle" type="id" />
+    <item name="remember_me" type="id" />
+</resources>

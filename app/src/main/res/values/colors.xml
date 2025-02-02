@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="white">#F0EEEE</color>
-    <color name="teal_200">#233652</color>
+    <color name="white">#FFFFFF</color> <!-- Pure white -->
+    <color name="primary">#004E64</color> <!-- Dark teal for buttons -->
+    <color name="secondary">#00897B</color> <!-- Soft greenish-teal -->
+    <color name="light_blue">#F0F8FF</color> <!-- Softer pastel blue -->
+    <color name="dark_blue">#00796B</color> <!-- Accent color -->
+    <color name="gray">#A0A0A0</color> <!-- For placeholder text/icons -->
+    <color name="black">#000000</color> <!-- For placeholder text/icons -->
+    <color name="teal_200">#233652</color> <!-- Ensure this exists -->
     <color name="teal_700">#00897B</color>
-    <color name="light_blue">#E0F7FA</color>
-    <color name="dark_blue">#00796B</color>
+
+
+
 </resources>
+
