@@ -25,12 +25,12 @@ public class Details_Info extends AppCompatActivity {
         Button applyButton = findViewById(R.id.apply_button);
 
         // Set sample data
-        jobTitle.setText("Manager");
-        jobLocation.setText("📍 New York");
+        jobTitle.setText("Helper");
+        jobLocation.setText("📍 Colombo-Kaduwela");
         jobType.setText("Full-time");
-        jobSalary.setText("$1656 per month");
-        jobDetails.setText("Lorem ipsum dolor sit amet, vis no erroribus hendrerit...");
-        jobRequirements.setText("Lorem ipsum dolor sit amet, vis no erroribus hendrerit...");
+        jobSalary.setText("$80 per month");
+        jobDetails.setText("A helper assists workers with tasks like cleaning, organizing, and carrying materials in offices, kitchens, warehouses, or construction sites.");
+        jobRequirements.setText(" Communication Skills/Customer Service/Time Management/Teamwork ");
 
         // Apply button click event
         applyButton.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +38,8 @@ public class Details_Info extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(Details_Info.this, "Resume Sent!", Toast.LENGTH_SHORT).show();
             }
+
+
         });
     }
 }
