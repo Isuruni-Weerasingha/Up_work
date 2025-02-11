@@ -34,10 +34,7 @@ android {
 dependencies {
 
  //   implementation(libs.androidx.cardview)
-    implementation(libs.material.v130)
-
-    implementation(libs.androidx.cardview)
-    implementation(libs.recyclerview)
+    implementation(libs.play.services.ads)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)

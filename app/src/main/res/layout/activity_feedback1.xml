@@ -1,10 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#F2F2F2">
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".feedback1"
+    android:background="@color/light_blue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        tools:ignore="ExtraText">
+
+        <!-- PartTimePro Header -->
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/malik"
+            android:text="UpWork"
+            android:textColor="@android:color/black"
+            android:textSize="44sp"
+            android:textStyle="bold" />
+
+        <!-- Image with correct placement -->
+
+        <!-- Subtitle below image -->
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/header"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-43dp"
+            app:srcCompat="@drawable/jobfree" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-19dp"
+            android:layout_marginRight="200dp"
+            android:text="Work when you want, Where you want."
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +87,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/light_gray"
+            android:background="@android:color/darker_gray"
             android:elevation="4dp"
             android:orientation="vertical"
             android:layout_marginTop="10dp"
@@ -91,8 +138,7 @@
                 android:numStars="5"
                 android:stepSize="1"
                 android:rating="0"
-                android:isIndicator="false"
-                android:theme="@style/Widget.AppCompat.RatingBar.Small"/>
+                android:isIndicator="false"/>
 
             <!-- Buttons -->
             <LinearLayout
@@ -103,6 +149,7 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/submitButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -112,6 +159,7 @@
                     android:textColor="#FFFFFF" />
 
                 <Button
+                    android:id="@+id/clearButton"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -122,123 +170,5 @@
 
         </LinearLayout>
 
-        <!-- Footer -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            tools:ignore="ExtraText">
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="18dp"
-                app:srcCompat="@drawable/jobfree"
-                android:contentDescription="Logo Image"/>
-
-            <!-- PartTimePro Header -->
-            <TextView
-                android:id="@+id/header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:fontFamily="@font/malik"
-                android:layout_marginTop="6dp"
-                android:text="PartTimePro"
-                android:textColor="@android:color/black"
-                android:textSize="34sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Work when you want, Where you want."
-                android:textSize="12sp"
-                android:layout_marginTop="36dp"
-                android:layout_marginLeft="90dp" />
-        </RelativeLayout>
-
-        <!-- Social Media Icons -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginTop="30dp"
-            android:paddingBottom="6dp">
-
-            <FrameLayout
-                android:layout_width="48dp"
-                android:layout_height="48dp">
-                <ImageView
-                    android:layout_width="34dp"
-                    android:layout_height="34dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/homee"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:onClick="onHomeClick"
-                    android:contentDescription="Home"/>
-            </FrameLayout>
-
-            <FrameLayout
-                android:layout_width="48dp"
-                android:layout_height="48dp">
-                <ImageView
-                    android:layout_width="34dp"
-                    android:layout_height="34dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/facebook"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:onClick="onFacebookClick"
-                    android:contentDescription="Facebook"/>
-            </FrameLayout>
-
-            <FrameLayout
-                android:layout_width="48dp"
-                android:layout_height="48dp">
-                <ImageView
-                    android:layout_width="34dp"
-                    android:layout_height="34dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/twitter"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:onClick="onTwitterClick"
-                    android:contentDescription="Twitter"/>
-            </FrameLayout>
-
-            <FrameLayout
-                android:layout_width="48dp"
-                android:layout_height="48dp">
-                <ImageView
-                    android:layout_width="34dp"
-                    android:layout_height="34dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/insta"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:onClick="onInstagramClick"
-                    android:contentDescription="Instagram"/>
-            </FrameLayout>
-
-            <FrameLayout
-                android:layout_width="48dp"
-                android:layout_height="48dp">
-                <ImageView
-                    android:layout_width="34dp"
-                    android:layout_height="34dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/linkedin"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:onClick="onLinkedInClick"
-                    android:contentDescription="LinkedIn"/>
-            </FrameLayout>
-
-        </LinearLayout>
-
     </LinearLayout>
-</ScrollView>
+</LinearLayout>
