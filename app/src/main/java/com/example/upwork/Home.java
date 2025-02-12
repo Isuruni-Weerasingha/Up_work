@@ -20,4 +20,23 @@ public class Home extends AppCompatActivity {  // Class names should start with 
         startActivity(intent);
         finish();  // Close current activity after navigating
     }
+    public void onContentClick(View view) {
+        Intent intent = new Intent(this, Home.class);  // Ensure AboutUsActivity exists
+        startActivity(intent);
+        finish();
+    }
+
+    public void onAboutClick(View view) {
+        Intent intent = new Intent(this, Home.class);  // Ensure AboutUsActivity exists
+        startActivity(intent);
+        finish();
+    }
+    public void onFeedbackClick(View view) {
+        Intent intent = new Intent(this, Home.class);  // Ensure AboutUsActivity exists
+        startActivity(intent);
+        finish();
+    }
+
+
+
 }
