@@ -19,7 +19,7 @@
             android:value="ca-app-pub-5679511623159807~7507468279"/>
 
         <activity
-            android:name=".profile"
+            android:name=".job_item"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

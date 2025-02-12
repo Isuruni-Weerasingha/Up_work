@@ -14,7 +14,7 @@
         android:layout_height="187dp"
         android:layout_gravity="center"
         android:contentDescription="Job Icon"
-        android:src="@drawable/jobfree" /> <!-- Ensure jobfree exists in drawable folder -->
+        android:src="@drawable/logo" /> <!-- Ensure jobfree exists in drawable folder -->
 
     <!-- First Job Listing -->
     <LinearLayout
