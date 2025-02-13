@@ -19,7 +19,7 @@
             android:value="ca-app-pub-5679511623159807~7507468279"/>
 
         <activity
-            android:name=".post_job"
+            android:name=".ContactUs"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -3,47 +3,72 @@ package com.example.upwork;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class Login extends AppCompatActivity {
+
+    private EditText etEmail, etPassword; // Changed to EditText
+    private Button btnLogin;
+    private TextView tvForgotPassword, tvRegister;
+    private ImageView btnGoogle, btnFacebook, btnInstagram;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        // Initialize UI components
-        EditText email = findViewById(R.id.email);
-        EditText password = findViewById(R.id.password);
-        CheckBox rememberMe = findViewById(R.id.rememberMe);
-        Button loginButton = findViewById(R.id.loginButton);
-        TextView registerText = findViewById(R.id.registerText);
+        // Initialize UI Elements
+        etEmail = findViewById(R.id.etEmail);
+        etPassword = findViewById(R.id.etPassword);
+        btnLogin = findViewById(R.id.btnLogin);
+        tvForgotPassword = findViewById(R.id.tvForgotPassword);
+        tvRegister = findViewById(R.id.tvRegister);
+        btnGoogle = findViewById(R.id.btnGoogle);
+        btnFacebook = findViewById(R.id.btnFacebook);
+        btnInstagram = findViewById(R.id.btnInstagram);
 
-        // Login button click listener
-        loginButton.setOnClickListener(v -> {
-            String emailInput = email.getText().toString().trim();
-            String passwordInput = password.getText().toString().trim();
+        // Login Button Click
+        btnLogin.setOnClickListener(v -> {
+            String email = etEmail.getText().toString().trim();
+            String password = etPassword.getText().toString().trim();
 
-            if (emailInput.isEmpty() || passwordInput.isEmpty()) {
+            if (email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(Login.this, "Please enter email and password", Toast.LENGTH_SHORT).show();
             } else {
-                // Dummy validation (replace with real authentication logic)
-                if (emailInput.equals("admin@example.com") && passwordInput.equals("123456")) {
-                    Toast.makeText(Login.this, "Login Successful!", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(Login.this, "Invalid email or password", Toast.LENGTH_SHORT).show();
-                }
+                Toast.makeText(Login.this, "Login Successful", Toast.LENGTH_SHORT).show();
             }
         });
 
-        // Navigate to Sign-up Activity when clicking "Don't have an account? Register"
-        registerText.setOnClickListener(v -> {
+        // Forgot Password Click
+        tvForgotPassword.setOnClickListener(v -> {
+            Toast.makeText(Login.this, "Forgot Password Clicked", Toast.LENGTH_SHORT).show();
+        });
+
+        // Register Click
+        tvRegister.setOnClickListener(v -> {
             Intent intent = new Intent(Login.this, signup.class);
             startActivity(intent);
         });
+
+        // Google Login Click
+        btnGoogle.setOnClickListener(v -> {
+            Toast.makeText(Login.this, "Google Login Clicked", Toast.LENGTH_SHORT).show();
+        });
+
+        // Facebook Login Click
+        btnFacebook.setOnClickListener(v -> {
+            Toast.makeText(Login.this, "Facebook Login Clicked", Toast.LENGTH_SHORT).show();
+        });
+
+        btnInstagram.setOnClickListener(v -> {
+            Toast.makeText(Login.this, "Istagram Login Clicked", Toast.LENGTH_SHORT).show();
+        });
     }
+
 }

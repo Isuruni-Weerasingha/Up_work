@@ -45,7 +45,7 @@ public class activity extends AppCompatActivity {
 
     private void openFilePicker() {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        intent.setType("/"); // Allows all file types
+        intent.setType("*/*"); // Allows all file types
         String[] mimeTypes = {"application/pdf", "application/msword",
                 "application/vnd.openxmlformats-officedocument.wordprocessingml.document"};
         intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);

@@ -146,7 +146,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mr.W.A.M.Priyanjan"
+                    android:text="Mr.W.A.M.P.Weerasinghe"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold"/>

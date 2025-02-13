@@ -14,7 +14,9 @@
     <color name="one">#20A625</color>
     <color name="teal_200">#233652</color>
     <color name="teal_700">#00897B</color>
-
-
+    <color name="bedit">#2C52C1</color>
+    <color name="gray">#808080</color>  <!-- Replace with your preferred gray shade -->
+    <color name="primary">#6200EE</color>  <!-- Replace with your desired color -->
+    <color name="drak_white">#E8E8E9</color>
 
 </resources>

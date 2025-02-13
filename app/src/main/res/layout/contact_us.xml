@@ -22,47 +22,68 @@
 
         <!-- Email -->
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/txtEmail"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="📧 Email: support@upwork.com"
             android:textSize="16sp"
-            android:textColor="#0000FF"
+            android:textColor="@color/black"
             android:clickable="true"
-            android:id="@+id/txtEmail"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="0dp"
+            android:padding="12dp"
+            android:layout_marginTop="2dp"
+            android:focusable="true"
+            android:minHeight="48dp" />  <!-- Minimum height to ensure touch target size -->
+        <!-- Added padding to increase touch target size -->
+
 
         <!-- WhatsApp -->
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/txtWhatsApp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="💬 WhatsApp: +1234567890"
             android:textSize="16sp"
             android:textColor="#209D49"
             android:clickable="true"
-            android:id="@+id/txtWhatsApp"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="2dp"
+            android:padding="12dp"
+            android:focusable="true"
+            android:minHeight="48dp" />  <!-- Added minimum height to ensure touch target size -->
+
+
+
 
         <!-- Hotline -->
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/txtHotline"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="☎ Hotline: +1122334455"
             android:textSize="16sp"
             android:textColor="#FF0000"
             android:clickable="true"
-            android:id="@+id/txtHotline"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="0dp"
+            android:padding="12dp"
+            android:focusable="true"
+            android:minHeight="48dp" />  <!-- Added minimum height to ensure touch target size -->
+
 
         <!-- Facebook -->
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/txtFacebook"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="🔗 Facebook:https://www.facebook.com/UpWork"
+            android:text="🔗 Facebook: https://www.facebook.com"
             android:textSize="16sp"
             android:textColor="#1877F2"
             android:clickable="true"
-            android:id="@+id/txtFacebook"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:padding="12dp"
+            android:focusable="true" />
+
+
 
         <!-- Address -->
         <TextView
@@ -79,16 +100,20 @@
             android:layout_height="wrap_content"
             android:hint="Your Name"
             android:padding="10dp"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp" />  <!-- Added minHeight to ensure touch target size -->
+
 
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:hint="Your Email"
             android:inputType="textEmailAddress"
-            android:padding="10dp"
+            android:padding="16dp"
             android:layout_marginBottom="10dp" />
+
 
         <EditText
             android:id="@+id/etMessage"
