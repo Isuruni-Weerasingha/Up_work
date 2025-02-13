@@ -13,13 +13,8 @@
         android:theme="@style/Theme.UpWork"
         tools:targetApi="31">
 
-        <!-- Add AdMob App ID here -->
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-5679511623159807~7507468279"/>
-
         <activity
-            android:name=".Home"
+            android:name=".Details_Info"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +22,18 @@
             </intent-filter>
         </activity>
 
-    </application>
+        <activity
+            android:name=".job_item"
+            android:exported="false" />
 
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+    </application>
 
 </manifest>
