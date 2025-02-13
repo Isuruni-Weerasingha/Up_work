@@ -33,11 +33,15 @@ android {
 
 dependencies {
 
+ //   implementation(libs.androidx.cardview)
+    implementation(libs.play.services.ads)
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.mediation.test.suite)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
 }
