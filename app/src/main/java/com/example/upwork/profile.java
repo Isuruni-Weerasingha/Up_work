@@ -1,6 +1,8 @@
 package com.example.upwork;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,5 +23,10 @@ public class profile extends AppCompatActivity {  // Fixed class name
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    public void onEditClick(View view) {
+        Intent intent = new Intent(this, Home.class);  // Ensure AboutUsActivity exists
+        startActivity(intent);
+        finish();
     }
 }

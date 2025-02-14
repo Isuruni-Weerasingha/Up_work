@@ -52,7 +52,7 @@ public class Login extends AppCompatActivity {
 
         // Register Click
         tvRegister.setOnClickListener(v -> {
-            Intent intent = new Intent(Login.this, signup.class);
+            Intent intent = new Intent(Login.this, Home.class);
             startActivity(intent);
         });
 

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#B8D5E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/input_background" />
+
+        <!-- Change Photo Button -->
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:text="Change Photo"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:onClick="changeProfilePhoto"/>
+
+        <!-- Form Fields -->
+        <EditText
+            android:id="@+id/et_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full name"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:padding="12dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/input_background"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/et_primary_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone number"
+            android:padding="12dp"
+            android:inputType="phone"
+            android:background="@drawable/input_background"
+            android:layout_marginTop="12dp"/>
+
+
+        <EditText
+            android:id="@+id/et_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your location"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/et_bio"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Your positions and experience"
+            android:padding="12dp"
+            android:background="@drawable/input_background"
+            android:gravity="top"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btn_save_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Profile"
+            android:textColor="@color/white"
+            android:background="@drawable/input_background"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

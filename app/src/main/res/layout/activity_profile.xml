@@ -72,6 +72,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Full name:  A.P.P.Priyalanka"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Email:  pasindupriyalanka@gmail.com"
             android:textColor="@color/black"
             android:textSize="15sp" />
@@ -93,7 +100,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bio: Passionate traveler and freelance writer, exploring the world one city at a time."
+            android:text="Exeperience: Passionate traveler and freelance writer, exploring the world one city at a time."
             android:textColor="@color/black"
             android:textSize="15sp" />
     </LinearLayout>
