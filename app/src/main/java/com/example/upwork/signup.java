@@ -26,7 +26,6 @@ public class signup extends AppCompatActivity {
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         repeatPassword = findViewById(R.id.repeat_password);
-        rememberMe = findViewById(R.id.remember_me);
         signUpButton = findViewById(R.id.signup_button);
         alreadyHaveAccount = findViewById(R.id.already_have_an_account_login);
 
@@ -57,5 +56,10 @@ public class signup extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
     }
+
+
 }

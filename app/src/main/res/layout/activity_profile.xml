@@ -41,13 +41,15 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/btnEdit"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_gravity="end"
             android:layout_marginTop="26dp"
             android:backgroundTint="@color/black"
             android:text="Edit"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            />
     </LinearLayout>
 
     <!-- Personal Information Section -->

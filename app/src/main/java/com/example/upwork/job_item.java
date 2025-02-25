@@ -1,5 +1,6 @@
 package com.example.upwork;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,8 @@ public class job_item extends AppCompatActivity {
     private TextView jobTitle2, jobLocation2, jobType2, jobSalary2, jobDetails2, jobRequirements2;
     private Button applyButton2;
 
+    private Button editPlusButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +40,12 @@ public class job_item extends AppCompatActivity {
                 "Work Experience");
 
         // Set apply button listener for Job 1
-        applyButton1.setOnClickListener(v ->
-                Toast.makeText(job_item.this, "Resume Sent for Job 1!", Toast.LENGTH_SHORT).show()
+        applyButton1.setOnClickListener(v ->{
+                    Intent intent = new Intent(job_item.this, activity.class);
+                    startActivity(intent);
+                    Toast.makeText(job_item.this, "Resume Sent for Job 1!", Toast.LENGTH_SHORT).show();
+                }
+
         );
 
         // Set job data for Job 2
@@ -48,9 +55,19 @@ public class job_item extends AppCompatActivity {
                 "Basic math skills, Customer Service Skills");
 
         // Set apply button listener for Job 2
-        applyButton2.setOnClickListener(v ->
-                Toast.makeText(job_item.this, "Resume Sent for Job 2!", Toast.LENGTH_SHORT).show()
-        );
+        applyButton2.setOnClickListener(v -> {
+            Intent intent = new Intent(job_item.this, activity.class);
+            startActivity(intent);
+            Toast.makeText(job_item.this, "Resume Sent for Job 2!", Toast.LENGTH_SHORT).show();
+        });
+
+
+
+    }
+    public void onAddClick(View view) {
+        Intent intent = new Intent(this, post_job.class);  // Ensure AboutUsActivity exists
+        startActivity(intent);
+        finish();
     }
 
     // Method to initialize views
@@ -87,6 +104,9 @@ public class job_item extends AppCompatActivity {
 
     public void onHomeClick(View view) {
         // Implement navigation logic if needed
+        Intent intent = new Intent(job_item.this, activity.class);
+        startActivity(intent);
         Toast.makeText(this, "Home Clicked", Toast.LENGTH_SHORT).show();
     }
+
 }

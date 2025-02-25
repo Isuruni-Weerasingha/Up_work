@@ -15,6 +15,8 @@
         android:contentDescription="Job Icon"
         android:src="@drawable/jobfree" /> <!-- Ensure jobfree exists in drawable folder -->
 
+
+
     <!-- First Job Listing -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -201,13 +203,16 @@
 
     <ImageButton
         android:id="@+id/editPlusButton"
-        android:layout_width="70dp"
+        android:layout_width="63dp"
         android:layout_height="70dp"
         android:layout_gravity="center"
-        android:background="@android:color/transparent"
-        android:src="@drawable/plus1"
         android:layout_marginTop="16dp"
-        android:contentDescription="Add" />
+        android:background="@android:color/transparent"
+        android:contentDescription="Add"
+        android:src="@drawable/plus1"
+        android:onClick="onAddClick"/>
+
+
 
 
 </LinearLayout>

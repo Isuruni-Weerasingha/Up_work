@@ -1,5 +1,6 @@
 package com.example.upwork;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,6 +18,8 @@ public class AboutUsActivity extends AppCompatActivity {
         contactButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(AboutUsActivity.this, ContactUs.class);  // Replace with your actual home activity
+                startActivity(intent);
                 Toast.makeText(AboutUsActivity.this, "Contact Us Clicked!", Toast.LENGTH_SHORT).show();
             }
         });
