@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="#B8D5E9">
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -89,7 +88,7 @@
             android:layout_height="wrap_content"
             android:text="Save Profile"
             android:textColor="@color/white"
-            android:background="@drawable/input_background"
+            android:backgroundTint="#516B92"
             android:layout_marginTop="20dp"/>
     </LinearLayout>
 </ScrollView>

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="18dp"
-    android:background="#A9C9EB">
+    android:background="#CCE0F4">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Post a Job"
+            android:text="Create Job"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@android:color/black"
@@ -142,10 +142,9 @@
             android:id="@+id/btnPostJob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#131A22"
-
+            android:backgroundTint="#516B92"
             android:padding="12dp"
-            android:text="Post Job"
+            android:text="Create Job"
             android:textColor="@android:color/white" />
     </LinearLayout>
 </ScrollView>

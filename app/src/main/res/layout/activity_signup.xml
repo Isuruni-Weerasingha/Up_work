@@ -52,7 +52,7 @@
         android:layout_height="50dp"
         android:text="Sign Up"
         android:textColor="@android:color/white"
-        android:background="@drawable/rounded_background"
+        android:backgroundTint="#516B92"
         android:layout_marginTop="30dp"/>
 
     <LinearLayout
