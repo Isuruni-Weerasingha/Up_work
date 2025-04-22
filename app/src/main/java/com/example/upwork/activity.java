@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -64,5 +65,10 @@ public class activity extends AppCompatActivity {
                 Toast.makeText(this, "File selection failed!", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+    public void onBackClick(View view) {
+        Intent intent = new Intent(activity.this, job_item.class);  // Replace with your actual home activity
+        startActivity(intent);
+        finish();  // Close current activity after navigating
     }
 }

@@ -50,4 +50,10 @@ public class feedback1 extends AppCompatActivity { // Renamed to follow Java con
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(intent);
     }
+
+    public void onBackClick(View view) {
+        Intent intent = new Intent(feedback1.this, Home.class);  // Replace with your actual home activity
+        startActivity(intent);
+        finish();  // Close current activity after navigating
+    }
 }

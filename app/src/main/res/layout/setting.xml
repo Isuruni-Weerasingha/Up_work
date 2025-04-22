@@ -11,6 +11,23 @@
         android:gravity="center_horizontal">
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backbtn"
+                android:background="@android:color/transparent"
+                android:contentDescription="back"
+                android:onClick="onBackClick" />
+
+
+        </LinearLayout>
         <!-- Profile Picture -->
         <ImageView
             android:id="@+id/profile_image"

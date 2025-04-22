@@ -37,4 +37,10 @@ public class profile extends AppCompatActivity {  // Fixed class name
         );
     }
 
+    public void onBackClick(View view) {
+        Intent intent = new Intent(profile.this, Home.class);  // Replace with your actual home activity
+        startActivity(intent);
+        finish();  // Close current activity after navigating
+    }
+
 }

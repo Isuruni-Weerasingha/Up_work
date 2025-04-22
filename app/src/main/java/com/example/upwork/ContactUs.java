@@ -84,4 +84,10 @@ public class ContactUs extends AppCompatActivity {
             Toast.makeText(this, "No email app found", Toast.LENGTH_SHORT).show();
         }
     }
-}
+    public void onBackClick(View view) {
+        Intent intent = new Intent(ContactUs.this, AboutUsActivity.class);  // Replace with your actual home activity
+        startActivity(intent);
+        finish();
+    }
+
+    }

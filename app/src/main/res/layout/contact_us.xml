@@ -11,6 +11,24 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backbtn"
+                android:background="@android:color/transparent"
+                android:contentDescription="back"
+                android:onClick="onBackClick" />
+
+
+        </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,14 +104,15 @@
 
 
         <!-- Address -->
+
+        <!-- Contact Form -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:text="📍 Address:No.9/99,Hewagama,Kaduwela"
-            android:textSize="16sp"
-            android:layout_marginBottom="20dp" />
+            android:textSize="16sp" />
 
-        <!-- Contact Form -->
         <EditText
             android:id="@+id/etName"
             android:layout_width="match_parent"

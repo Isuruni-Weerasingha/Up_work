@@ -26,7 +26,7 @@ public class AboutUsActivity extends AppCompatActivity {
 
     }
 
-    public void onHomeClick(View view) {
+    public void onBackClick(View view) {
         Intent intent = new Intent(AboutUsActivity.this, Home.class);  // Replace with your actual home activity
         startActivity(intent);
         finish();  // Close current activity after navigating

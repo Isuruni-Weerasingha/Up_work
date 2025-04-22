@@ -109,4 +109,10 @@ public class job_item extends AppCompatActivity {
         Toast.makeText(this, "Home Clicked", Toast.LENGTH_SHORT).show();
     }
 
+    public void onBackClick(View view) {
+        Intent intent = new Intent(job_item.this, Home.class);  // Replace with your actual home activity
+        startActivity(intent);
+        finish();  // Close current activity after navigating
+    }
+
 }

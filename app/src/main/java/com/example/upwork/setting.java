@@ -80,4 +80,10 @@ public class setting extends AppCompatActivity {
         // Here you can save data to a database or shared preferences
         Toast.makeText(this, "Profile Saved Successfully!", Toast.LENGTH_SHORT).show();
     }
+
+    public void onBackClick(View view) {
+        Intent intent = new Intent(setting.this, profile.class);  // Replace with your actual home activity
+        startActivity(intent);
+        finish();  // Close current activity after navigating
+    }
 }
